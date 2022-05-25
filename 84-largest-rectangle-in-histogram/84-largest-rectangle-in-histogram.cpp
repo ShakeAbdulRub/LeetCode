@@ -43,8 +43,8 @@ public:
                 s.push(i);
             }
         }
-        //maxarea=(r[0]-l[0]+1)*heights[0];
-        for(int i=0;i<n;i++)
+        maxarea=(r[0]-l[0]+1)*heights[0];
+        for(int i=1;i<n;i++)
         {
             int x=(r[i]-l[i]+1)*heights[i];
             if(x>maxarea)
