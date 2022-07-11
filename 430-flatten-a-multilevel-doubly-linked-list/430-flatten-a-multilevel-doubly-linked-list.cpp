@@ -12,7 +12,7 @@ public:
 class Solution {
 public:
     Node* flatten(Node* head){
-        Node *temp=head,*t,*p;
+        Node *temp=head,*p;
         stack<Node*> s;
         while(temp)
         {
@@ -22,7 +22,6 @@ public:
                 {
                     s.push(temp->next);
                 }
-                t=temp->next;
                 temp->next=temp->child;
                 temp->next->prev=temp;
                 temp->child=NULL;
