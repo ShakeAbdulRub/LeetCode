@@ -5,7 +5,10 @@ public:
         for(int i : nums)
         {
             if(i>0) f=1;
-            maxi=max(maxi,i);
+            if(i>maxi)
+            {
+                maxi=i;
+            }
             sum1=sum1+i;
             if(sum1>sum) sum=sum1;
             if(sum1<0)sum1=0;
