@@ -1,4 +1,4 @@
-// { Driver Code Starts
+//{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -25,7 +25,7 @@ void print(Node *root)
 }
  
 
- // } Driver Code Ends
+// } Driver Code Ends
 /*
 
 The structure of linked list is the following
@@ -47,33 +47,40 @@ class Solution
     public:
     Node *zigZag(Node* head)
     {
-     bool f=true;
-     Node *t=head;
-     while(t->next)
+     // your code goes here
+     Node *temp=head->next;
+     Node *pre=head;
+     bool flag=true;
+     while(temp)
      {
-         if(f)
+         if(flag)
          {
-             if(t->data > t->next->data)
+             if(pre->data>temp->data)
              {
-                 swap(t->data,t->next->data);
+                 int t=temp->data;
+                 temp->data=pre->data;
+                 pre->data=t;
              }
          }
          else
          {
-             if(t->data < t->next->data)
+              if(pre->data<temp->data)
              {
-                 swap(t->data,t->next->data);
+                 int t=temp->data;
+                 temp->data=pre->data;
+                 pre->data=t;
              }
          }
-         t=t->next;
-         f=!f;
-        
+         pre=pre->next;
+         temp=temp->next;
+         flag=!flag;
+         
      }
      return head;
     }
 };
 
-// { Driver Code Starts.
+//{ Driver Code Starts.
 
 
 int main() {
@@ -105,4 +112,5 @@ int main() {
 		cout<<endl;
 	}
 	return 0;
-}  // } Driver Code Ends
+}
+// } Driver Code Ends
