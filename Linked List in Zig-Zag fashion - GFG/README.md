@@ -1,7 +1,6 @@
 # Linked List in Zig-Zag fashion
-## Easy 
-<div class="problem-statement">
-                <p></p><p><span style="font-size:18px">Given a <strong>L</strong>inked <strong>l</strong>ist, rearrange it such that converted list should be of the form a &lt; b &gt; c &lt; d &gt; e &lt; f .. where <strong>a, b, c</strong>&nbsp;are consecutive data node of linked list and such that the order of linked list is sustained.<br>
+## Easy
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given a <strong>L</strong>inked <strong>l</strong>ist, rearrange it such that converted list should be of the form a &lt; b &gt; c &lt; d &gt; e &lt; f .. where <strong>a, b, c</strong>&nbsp;are consecutive data node of linked list and such that the order of linked list is sustained.<br>
 <strong>For example:</strong> In&nbsp;11&nbsp;15&nbsp;20&nbsp;5&nbsp;10&nbsp;we consider only&nbsp;11 20 5 15 10&nbsp;because it satisfies the above condition and the order of linked list. 5 20 11 15 10 is not considered as it does not follow the order of linked list.</span></p>
 
 <p><span style="font-size:18px">To maintain the order, keep swapping the <strong>adjacent</strong> nodes of the linked list (whenever required)&nbsp;to get the desired output.&nbsp;&nbsp;</span></p>
@@ -30,5 +29,4 @@ The task is to complete the function&nbsp;<strong>zigZag</strong>() which should
 
 <p><span style="font-size:18px"><strong>Constraints:</strong><br>
 1 &lt;= size of linked list(a) &lt;= 1000</span></p>
- <p></p>
-            </div>
+</div>
